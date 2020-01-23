@@ -1,0 +1,88 @@
+.sign-up { grid-area: signUp; }
+.sign-in { grid-area: signIn; }
+
+.page-content {
+  width: 100%;
+    margin: 0 auto;
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 100vh;    
+    display: grid;
+    display: -webkit-grid;
+    justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -o-align-items: center;
+    -ms-align-items: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+}
+
+.sign-in-and-sign-up {
+  background: #fff;
+  width: 100%;
+  border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  margin: 175px 0;
+  position: relative;
+  display: grid;
+  display: -webkit-grid;
+  grid-template-areas:
+  'signIn signUp';
+  grid-template-columns: auto auto;
+
+    grid-gap: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  }
+  
+  @media screen and (max-width: 760px) {
+    .sign-in-and-sign-up{
+      height: auto;
+      display: grid;
+      grid-template-areas:
+      'signIn'
+       'signUp';
+       grid-template-columns: auto;  
+      grid-gap: 1rem;
+    }
+    .sign-in {
+      border-bottom-left-radius: 0;
+      border-right-style: none;
+      border-bottom-style: outset;
+      padding-bottom: 40px;
+  }
+  
+  
+  }
+  
+  @media screen and (max-width: 500px) {
+    .sign-in-and-sign-up{
+      height: auto;
+      display: grid;
+      grid-template-areas:
+      'signIn'
+       'signUp';
+       grid-template-columns: auto;
+  
+      grid-gap: 1rem;
+    }
+
+    .sign-in {
+      border-bottom-left-radius: 0;
+      border-right-style: none;
+      border-bottom-style: outset;
+      padding-bottom: 40px;
+  }
+}
